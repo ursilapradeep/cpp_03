@@ -6,7 +6,7 @@
 /*   By: uvadakku <uvadakku@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 07:56:50 by uvadakku          #+#    #+#             */
-/*   Updated: 2026/05/26 08:23:58 by uvadakku         ###   ########.fr       */
+/*   Updated: 2026/05/30 04:58:23 by uvadakku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ public:
 		void beRepaired(unsigned int amount);
 
 		bool isOperational() const { return _hitPoints > 0; }
-	};
+};
 
 #endif
+

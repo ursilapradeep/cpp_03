@@ -1,14 +1,13 @@
 # cpp_03
 Traps
 
-To create a derived robot. It is named ScavTrap and will inherit the constructors and destructor from Clap- Trap. However, its constructors, destructor, and attack() will print different messages. After all, ClapTraps are aware of their individuality.
-When a ScavTrap is created, the program starts by constructing a ClapTrap. Destruc- tion occurs in reverse order. why?
-
-ScavTrap will use the attributes of ClapTrap (update ClapTrap accordingly) and is initialized with:
-• Name, which is passed as a parameter to the constructor 
-• Hit points (100), representing the health of the ClapTrap 
-• Energy points (50)
-• Attack damage (20)
-ScavTrap will also have its own special ability:
-    void guardGate();
-This member function will display a message indicating that ScavTrap is now in Gate keeper mode.
+A class called ClapTrap have the following private attributes initialized to the values specified in brackets:
+• Name, which is passed as a parameter to the constructor • Hit points (10), representing the health of the ClapTrap • Energy points (10)
+• Attack damage (0)
+It has the following public member functions so that the ClapTrap behaves more realistically:
+• void attack(const std::string& target); • void takeDamage(unsigned int amount);
+• void beRepaired(unsigned int amount);
+When ClapTrap attacks, it causes its target to lose <attack damage> hit points. 
+When ClapTrap repairs itself, it regains <amount> hit points. 
+Attacking and repairing each cost 1 energy point. Of course, ClapTrap can’t do anything if it has no hit points or energy points left.
+The ClapTrap instances should not interact directly with one another, and the parameters will not refer to another instance of ClapTrap...
